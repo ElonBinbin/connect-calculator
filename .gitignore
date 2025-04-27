@@ -1,0 +1,9 @@
+# Mac系统文件
+.DS_Store
+
+# Node.js前端
+frontend/node_modules/
+
+# Go编译生成的
+backend/bin/
+backend/*.exe
