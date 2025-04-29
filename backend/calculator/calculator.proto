@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "./calculator"; // 这个路径应该与 Go 代码中的包路径一致
+
+
+
+// 定义操作数的结构
+message Operands {
+  double a = 1;
+  double b = 2;
+}
+
+// 定义结果的结构
+message Result {
+  double value = 1;
+}
+
+// 定义计算器服务
+service Calculator {
+  rpc Add (Operands) returns (Result);
+  rpc Subtract (Operands) returns (Result);
+  rpc Multiply (Operands) returns (Result);
+  rpc Divide (Operands) returns (Result);
+}
