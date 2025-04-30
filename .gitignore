@@ -7,3 +7,6 @@ frontend/node_modules/
 # Go编译生成的
 backend/bin/
 backend/*.exe
+
+# idea生成的
+.idea
