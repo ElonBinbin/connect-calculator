@@ -27,5 +27,11 @@ go run main.go
 cd frontend
 npm install
 npm run dev
-```
 
+### Envyo代理
+envoy -c envoy.yaml
+
+```
+###  测试后端
+cd backend
+go run server_test.go

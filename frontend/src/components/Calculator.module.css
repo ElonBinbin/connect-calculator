@@ -1,0 +1,93 @@
+.calculator {
+  max-width: 1000px; /* 调整为合适的宽度 */
+  min-height: 400px; /* 增加最小高度，确保内容有足够空间 */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222 !important;
+  z-index: 10;
+}
+
+.calculator h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #222 !important;
+  background: #ffdddd !important; /* 临时调试用，调试完可以去掉 */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.input {
+  width: 48%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #fff !important;
+  color: #222 !important;
+  z-index: 10;
+}
+
+.buttonGroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.button {
+  padding: 12px 0;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #357abd;
+}
+
+.error {
+  color: #e74c3c;
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.result {
+  background-color: #e8f4fc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; /* 增加顶部间距，确保不会影响其他内容 */
+}
+
+.result p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.result p:last-child {
+  font-weight: bold;
+  font-size: 24px;
+  color: #2c3e50;
+}

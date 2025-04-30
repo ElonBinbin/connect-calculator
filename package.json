@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@bufbuild/connect-node": "^0.13.0",
+    "ts-node": "^10.9.2"
+  }
+}
